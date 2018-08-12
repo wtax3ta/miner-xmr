@@ -4,7 +4,7 @@ if [ "$(whoami)" != "root" ]; then
         exit 1
 fi
 
-WALLET=Q01050060d4422de1c0d9275c939da33b0843bef5ce4443ef88309f4c763f9da37404815e9b0349
+WALLET=0x6da460fd56b991e3c7e75963aa3a7a7646e1c730
 ID="$(hostname)"
 PASSWORD=x
 THREADS="$(nproc --all)"
