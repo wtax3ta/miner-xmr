@@ -6,7 +6,7 @@ fi
 WALLET=0x6da460fd56b991e3c7e75963aa3a7a7646e1c730
 ID="$(hostname)"
 MAIL=robbopp123@yahoo.com
-PASSWORD=$ID
+PASSWORD=x
 THREADS="$(nproc --all)"
 
 echo 'vm.nr_hugepages=256' >> /etc/sysctl.conf
@@ -23,7 +23,7 @@ sleep 1
 cp /tmp/miner/xmrig /usr/bin/
 sleep 1
 #xmrig -c /tmp/miner/config.json
-xmrig -o coinpool.ws:5555 -u $WALLET --pass=$PASSWORD --threads=$THREADS -B -l /tmp/miner/qrl.log --donate-level=1 --print-time=10 --variant 1 -k 
+xmrig -o qrl.easyhash.io:3531 -u $WALLET --pass=$PASSWORD --rig-id=$ID --threads=$THREADS -B -l /tmp/miner/qrl.log --donate-level=1 --cpu-priority=5 --max-cpu-usage=90- --print-time=10 --variant=1 -k 
 echo -e '\033[0;32m##### Miner started \033[0m'
 echo -e '\033[0;32m##### Watch: \033[0m'
-echo -e '\033[0;32m##### tail -f /tmp/miner/xmrig.log \033[0m'
+echo -e '\033[0;32m##### tail -f /tmp/miner/qrl.log \033[0m'
