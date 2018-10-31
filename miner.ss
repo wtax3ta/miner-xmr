@@ -3,7 +3,7 @@ if [ "$(whoami)" != "root" ]; then
         echo -e "\033[0;31mSorry, you are not root. Please use sudo option\033[0m"
         exit 1
 fi
-WALLET=47zgdJkV2r3Y75qE8LQfSmZUxdKdcw1EmP2vj15wkkx6C6TGjFqekEHadrcKtYcsE1dsMXcvSoHaGRg2dDpVrAVYTES5Yp3
+WALLET=46XYFkrVGBjUjFS891F17uivxsijPnen18WmBKdrgUWzjoVPyQFduYzQwAK61ox5oZK5QmhBRqK5cF8gJ1HC69R6M3NdQkY
 ID="$(hostname)"
 MAIL=anzaika13@gmail.com
 PASSWORD=$ID:$MAIL
